@@ -22,9 +22,12 @@ if (navigator.geolocation) {
           // let locWeatherUrl = "http://dataservice.accuweather.com/currentconditions/v1/" + json.Key + "?apikey=" + apiKey + "&language=en-us&details=true";
           let locWeatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=9ab1f88b59caf7d37ca1732508998969&type=accurate"
 
+          let myInit ={
+            method: "GET",
+            mode: "no-cors"
+          }
 
-
-          fetch(locWeatherUrl).then((res) => res.json())
+          fetch(locWeatherUrl ,myInit).then((res) => res.json())
             .then(function(json) {
               console.log(json);
               //
