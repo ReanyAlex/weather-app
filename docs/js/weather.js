@@ -6,7 +6,7 @@ if (navigator.geolocation) {
       const apiKey = "Rt5TsWAZfnGjflbfxUjGuvw5iUVhMghS"
 
       // url for api request to find location
-      let locReqUrl = "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=Rt5TsWAZfnGjflbfxUjGuvw5iUVhMghS&q="+position.coords.latitude+"%2C" + position.coords.longitude;
+      // let locReqUrl = "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=Rt5TsWAZfnGjflbfxUjGuvw5iUVhMghS&q="+position.coords.latitude+"%2C" + position.coords.longitude;
 
       //fetch data from api return json
       // fetch(locReqUrl).then((res) => res.json())
