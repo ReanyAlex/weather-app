@@ -23,6 +23,11 @@ body{
 
 @media (min-width: 0px) {
 
+  .current__time-text{
+    font-size: 2rem;
+    padding-right: 0px;
+  }
+
   .location-sm{
     padding-top: 50px;
   }
@@ -76,6 +81,10 @@ body{
 }
 
 @media (min-width: 1200px) {
+  .current__time-text{
+    font-size: 2rem;
+    padding-right: 45px;
+  }
 
   .location{
     padding-top: 100px;
@@ -147,9 +156,10 @@ body{
   font-size: 4rem;
 }
 
-.current__time-text{
+/*.current__time-text{
   font-size: 2rem;
-}
+  padding-right: 35px;
+}*/
 
 .current__temp-head{
   font-size: 1.6rem;
