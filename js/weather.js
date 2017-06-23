@@ -4,13 +4,13 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
     $(document).ready(function() {
       // url for api request to find location
-      let locReqUrl = "http://api.wunderground.com/api/f683dd612ad90419/geolookup/q/" + position.coords.latitude + "," + position.coords.longitude + ".json"
+      let locReqUrl = "https://api.wunderground.com/api/f683dd612ad90419/geolookup/q/" + position.coords.latitude + "," + position.coords.longitude + ".json"
       // url for local weather based on response of your geolocation needs state and city
-      let locWeatherUrl = "http://api.wunderground.com/api/f683dd612ad90419/conditions/q/"
+      let locWeatherUrl = "https://api.wunderground.com/api/f683dd612ad90419/conditions/q/"
       let locWeatherUrlComp = ""
 
       // url for local weather based on response of your geolocation needs state and city
-      let weatherForecastUrl = "http://api.wunderground.com/api/f683dd612ad90419/forecast10day/q/"
+      let weatherForecastUrl = "https://api.wunderground.com/api/f683dd612ad90419/forecast10day/q/"
       let weatherForecastUrlComp = ""
 
 
