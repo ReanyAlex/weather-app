@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href=styles.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <h1 class="location location-sm col-12-sm">City, State</h1>
+    </div>
+
+    <div class="wrapper content-box">
+      <div class="col-8-md col-12-sm">
+
+        <div class="row">
+          <div class="current col-2-md">
+            <span class="current-condition">
+              <img class="current-condition-icon" src="">
+              <p class="current-condition-text">hold</p>
+            </span>
+          </div>
+            <div class="col-4-md current__temp-box">
+              <span class="current__temp-text"> Temp </span>
+            </div>
+            <div class="col-6-md current__temp-box">
+              <span class="current__time-text"> Time </span>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6-md">
+            <h3 class="current__temp-head">Today</h3>
+            <span class="current__temp-high-title">High:</span>
+            <span class="current__temp-value-high">90</span>
+            <span class="divide">|</span>
+            <span class="current__temp-low-title">Low:</span>
+            <span class="current__temp-value-low">40</span>
+          </div>
+          <div class="col-6-md">
+            <div class="">
+
+            </div>
+            <div class="">
+              <div class="current__percip-head">
+                Humidty:
+              </div>
+              <span class="current-humidity">
+                40%
+              </span>
+            </div>
+            <div class="">
+              <div class="current__percip-head">
+                Chance of Precip:
+              </div>
+              <span class="current-percip">
+                40%
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row forecastDiv">
+
+        </div>
+
+      </div>
+
+      <div class="map col-4-md col-0-sm">
+        <div id="map" style="width:100%;height:400px;background:yellow"></div>
+      </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqUk3ftTjvc_A0pTkUcktz6157RIly514&callback=myMap"></script>
+</html>
