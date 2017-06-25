@@ -29,7 +29,7 @@ if (navigator.geolocation) {
           }
         })
       // url for local weather based on response of your geolocation needs location code
-      let weatherForecastUrl = `https://api.apixu.com/v1/forecast.json?key=${apiKey}&q=` + position.coords.latitude + "," + position.coords.longitude + `&days=8`
+      let weatherForecastUrl = `https://api.apixu.com/v1/forecast.json?key=${apiKey}&q=` + position.coords.latitude + "," + position.coords.longitude + `&days=9`
       // console.log(weatherForecastUrl);
       var forecast = fetch(weatherForecastUrl).then((res) => res.json())
         .then(function(json) {
@@ -48,7 +48,7 @@ if (navigator.geolocation) {
 
           // creating the div for the forecast
           let forecastDiv = document.querySelector(".forecastDiv")
-          for (let i = 1; i <= 7; i++) {
+          for (let i = 2; i <= 8; i++) {
 
             //create a date format from epoch number
             var utcSeconds = json.forecast.forecastday[i].date_epoch;
