@@ -120,8 +120,7 @@ function myMap() {
   document.querySelector(".current__time-text").innerHTML = daylist[day] + " " + hours + ":" + minutes + suffix;
 })();
 
-//-------------------------------------------------//
-//obj for background images
+
 var conditionImage = {
   "1000": {
     "day": "Sunny",
@@ -316,4 +315,3 @@ var conditionImage = {
     "photo": "photos/snow.jpg"
   }
 }
-//-------------------------------------------------//
